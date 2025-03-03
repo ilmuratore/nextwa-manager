@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Includi la connessione a MongoDB
-require('./db');
+require('./database/db');
 
 // Importa il modello Message
 const Message = require('./models/Message');
@@ -44,7 +44,7 @@ app.listen(port, () => {
 });
 
 // Avvio del client WhatsApp tramite Baileys
-const { default: makeWASocket, useMultiFileAuthState } = require('@adiwajshing/baileys');
+const { default: makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
 
 async function startWhatsApp() {
   const { state, saveCreds } = await useMultiFileAuthState('./auth_info');
