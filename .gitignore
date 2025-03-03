@@ -1,0 +1,58 @@
+#Ignore node_modules folder
+/node_modules/
+
+#Ignore log files
+*.log
+
+#Ignore OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#Ignore tmp files
+*.swp
+*.tmp
+
+#Ignore cache files
+*.cache
+
+#Ignore local env files
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+#Ignore secrets files
+secrets.js
+secrets.json
+
+#Ignore local storage files
+storage/
+storage/*.*
+
+#Ignore yarn and npm files
+yarn-error.log
+yarn.lock
+package-lock.json
+pnp.js
+
+#Ignore vscode files
+.vscode/
+.vscode/settings.json
+
+#Ignore editor files
+*.sublime-project
+*.sublime-workspace
+
+#Ignore nextjs files
+.next/
+.vercel/
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
